@@ -1,25 +1,30 @@
 Video 58
 
-1) Creamos el entorno
-2) django-admin startproject webplayground
-3) Copiamos la aplicación core (que nos da el autor del video)
-4) Registramos la aplicación
-5) ...
-6) python manage.py migrate
-7) python manage.py runserver
+1. Creamos el entorno
+2. django-admin startproject webplayground
+3. Copiamos la aplicación core (que nos da el autor del video)
+4. Registramos la aplicación
+5. ...
+6. python manage.py migrate
+7. python manage.py runserver
 
 Video 59
 
-1) https://ccbv.co.uk/
+1. https://ccbv.co.uk/
 
 Video 60
 
-1) Registramos la aplicación
-2) Como la app tiene modelos, vamos a tener que migrarla
+1. Registramos la aplicación
+2. Como la app tiene modelos, vamos a tener que migrarla
    python manage.py makemigrations pages
    python manage.py migrate pages
-3) Creamos un superusuario:
+3. Creamos un superusuario:
    python manage.py createsuperuser
-4) Registramos ckeditor, que es una aplicación, que usa la aplicación 'pages'
-5) Nos loggeamos como superusuario, y creamos una nueva página.
+4. Registramos ckeditor, que es una aplicación, que usa la aplicación 'pages'
+5. Nos loggeamos como superusuario, y creamos una nueva página.
 
+Video 61
+
+1. https://gist.github.com/hcosta/143950b40dda8cf640076a629cec7f09
+2. Con la que hemos cambiado, ahora para acceder a" una página sería "pages:pages", "pages:page" o "pages:create". Cogemos en el urs.py de pages, el name, como el nombre que viene después de :
+3. https://gist.github.com/hcosta/456df0769f153a2458e711d3f78b75a2
