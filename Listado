@@ -33,3 +33,8 @@ Video 64
 
 1. https://gist.github.com/hcosta/586f1354e662a25d43a1b2e66403eda9
 2. Nota: en ¿Estás seguro de que quieres borrar "{{ object }}"?, el object se puede sustituir por un modelo.
+
+Video 65
+
+1. https://github.com/django-ckeditor/django-ckeditor#outside-of-django-admin
+2. https://gist.github.com/hcosta/15ae0835e5824685d46e75f49efc1bcb
