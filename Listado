@@ -28,3 +28,8 @@ Video 61
 1. https://gist.github.com/hcosta/143950b40dda8cf640076a629cec7f09
 2. Con la que hemos cambiado, ahora para acceder a" una página sería "pages:pages", "pages:page" o "pages:create". Cogemos en el urs.py de pages, el name, como el nombre que viene después de :
 3. https://gist.github.com/hcosta/456df0769f153a2458e711d3f78b75a2
+
+Video 64
+
+1. https://gist.github.com/hcosta/586f1354e662a25d43a1b2e66403eda9
+2. Nota: en ¿Estás seguro de que quieres borrar "{{ object }}"?, el object se puede sustituir por un modelo.
