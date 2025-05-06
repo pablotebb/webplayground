@@ -12,3 +12,14 @@ Video 59
 
 1) https://ccbv.co.uk/
 
+Video 60
+
+1) Registramos la aplicación
+2) Como la app tiene modelos, vamos a tener que migrarla
+   python manage.py makemigrations pages
+   python manage.py migrate pages
+3) Creamos un superusuario:
+   python manage.py createsuperuser
+4) Registramos ckeditor, que es una aplicación, que usa la aplicación 'pages'
+5) Nos loggeamos como superusuario, y creamos una nueva página.
+
