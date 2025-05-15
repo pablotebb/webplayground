@@ -61,3 +61,7 @@ Video 68
    redirecciona a: "http://127.0.0.1:8000/accounts/profile/", y nos da 
    un error,porque no encuentra el directorio profile. Después lo crearemos.
 5. Por ahora, vamos a settings.py a cambiar el redireccionamiento
+
+
+Video 69
+1. Ver "Pagina.png"
