@@ -65,3 +65,7 @@ Video 68
 
 Video 69
 1. Ver "Pagina.png"
+
+Video 71
+1. El autor del video recomienda, una vez registrado, como nos conduce al login, y nos nos informa que estamos registrado, que pongamos el el url:
+127.0.0.1/accounts/login/?register, para que si detectamos en el formulario login, el '?register', pongamos un mensaje de: "Te has registrado correctamente, y que ya puede iniciar la sesión"
