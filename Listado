@@ -82,3 +82,6 @@ Video 77
 3. Ojo para mandar archivos, ya sean imagenes o archivos, poner:
    <form action="" method="post" enctype="multipart/form-data">
 4. Podemos acceder asi: {{request.user.profile.link}}
+
+Video 78
+1. En profile "profile_form.html", hacemos: <style>label{display:none}</style>, para ocultar las etiquetas
