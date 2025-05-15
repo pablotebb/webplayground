@@ -69,3 +69,6 @@ Video 69
 Video 71
 1. El autor del video recomienda, una vez registrado, como nos conduce al login, y nos nos informa que estamos registrado, que pongamos el el url:
 127.0.0.1/accounts/login/?register, para que si detectamos en el formulario login, el '?register', pongamos un mensaje de: "Te has registrado correctamente, y que ya puede iniciar la sesión"
+
+Video 75
+1. Una vez añadido el código, si vamos al navegador, a "http://127.0.0.1:8000/accounts/password_reset/", nos aparece un formulario por defecto para restablecer la contraseña. Django los añade por defecto. Pero nosotros queremos uno personalizado. Por tanto, tendremos que sobreescribirlos.
