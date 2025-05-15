@@ -75,3 +75,10 @@ Video 75
 
 Video 76
 1. Tenemos que instalar pillow, para las imágenes
+
+Video 77
+1. python manage.py makemigrations registration
+2. python manage.py migrate registration
+3. Ojo para mandar archivos, ya sean imagenes o archivos, poner:
+   <form action="" method="post" enctype="multipart/form-data">
+4. Podemos acceder asi: {{request.user.profile.link}}
