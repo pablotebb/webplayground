@@ -38,3 +38,26 @@ Video 65
 
 1. https://github.com/django-ckeditor/django-ckeditor#outside-of-django-admin
 2. https://gist.github.com/hcosta/15ae0835e5824685d46e75f49efc1bcb
+
+Video 68
+
+1. python manage.py startapp registration
+   (tiene que ser este nombre)
+2. Es muy importante que la registremos arriba del todo, lo cual da prioridad, en caso de conflictos, sobre los demás programas
+   INSTALLED_APPS = [
+   'registration',
+   'django.contrib.admin',
+   'django.contrib.auth',
+   'django.contrib.contenttypes',
+   'django.contrib.sessions',
+   'django.contrib.messages',
+   'django.contrib.staticfiles',
+   'ckeditor',
+   'core',
+   'pages.apps.PagesConfig',
+   ]
+3. Paramos servidor, y volvemos a arrancar...
+4. Cuando nos loggemos en url/accounts/login, y nos validamos, nos 
+   redirecciona a: "http://127.0.0.1:8000/accounts/profile/", y nos da 
+   un error,porque no encuentra el directorio profile. Después lo crearemos.
+5. Por ahora, vamos a settings.py a cambiar el redireccionamiento
