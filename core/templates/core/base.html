@@ -38,6 +38,11 @@
                     Acceder
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'signup' %}">
+                    Registro
+                  </a>
+                </li>
               {% else %}
                 <div style="display: none;">
                   <form name="formSignout" action="{% url 'logout' %}" method="post">{% csrf_token %}</form>
