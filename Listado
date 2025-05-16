@@ -91,3 +91,8 @@ Video 81
    >>> from registration.models import Profile
    >>> Profile.objects.get(user__username='pepito8')
    <Profile: Profile object (2)>
+   
+Video 82 
+1. Como comprobar si hay un usuario creado por la shell, es bastante complicado. Vamos a crear una prueba unitaria, que se encargue de automatizar un procedimiento. El procedimento es que se cree un usuario, y luego comprobremos que se haya creado un perfil a ese propio usuario, para saber si nuestro código está funcionando correctamente.
+2. Creamos el test.py
+3. python manage.py test registration
