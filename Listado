@@ -109,3 +109,36 @@ Video 86
 1. Para ver las paginas: http://127.0.0.1:8000/profiles/?page=2
 2. La consola nos da este aviso: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'registration.models.Profile'> QuerySet.
    Para arreglarlo, modificamos el "models.py" de registration.
+
+Video 87
+
+1. LAS CINCO V
+   WHO: ¿Quien hará uso de la funcionalidad?
+   Un usuario registrado e identificado.
+   WHAT: ¿Qué hará la funcionalidad?
+   Establecer un chat privado entre el usuario y otros usuarios para que se puedan comunicar.
+   WHEN: ¿Cuándo?
+   Cuando un usuario decida iniciar una conversación con otro.
+   WHERE: ¿Dónde?
+   En su debida sección de Mensajes o a través del botón "Enviar mensaje" en los perfiles públicos.
+   WHY: ¿Por qué?
+   Porque ofrecer una vía de comunicación privada es una opción que toda aplicación social debería incluir, además será reutilizable y nos servirá para aprender mucho.
+
+   APRECIACIONES
+   No será un chat en tiempo real, sino un sistema más simple parecido a un email interno que el usuario deberá comprobar manualmente.
+
+   MODELOS
+   MESSAGE (Mensaje)
+
+   - Usuario emisor (FK User)
+   - Contenido (Text)
+   - Fecha de creación (DateTime)
+
+   THREAD (Hilo)
+
+   - Usuarios (M2M User)
+   - Mensaje (M2M Message)
+
+2. python manage.py startapp messenger
+3. python manage.py makemigrations messenger
+   python manage.py migrate messenger
