@@ -85,3 +85,9 @@ Video 77
 
 Video 78
 1. En profile "profile_form.html", hacemos: <style>label{display:none}</style>, para ocultar las etiquetas
+
+Video 81
+1. python manage.py shell
+   >>> from registration.models import Profile
+   >>> Profile.objects.get(user__username='pepito8')
+   <Profile: Profile object (2)>
