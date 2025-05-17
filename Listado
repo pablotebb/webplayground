@@ -174,3 +174,11 @@ Video 92
    > > > thread.messages.add(Message.objects.create(user=pablo, content="Me voy"))
    > > > thread.messages.add(Message.objects.create(user=pepito, content="Pues adiós!"))
    > > > exit()
+
+Video 93
+
+- Campos de un mensaje
+  Hilo - Lo enviaremos en el Path de la petición con una <pk>
+  Usuario - Lo encontramos implícito en el objeto request
+  Contenido - Lo capturaremos de un Widget textarea y lo enviaremos a través de un parámetro GET a la vista
+- http://127.0.0.1:8000/messenger/thread/1/add
