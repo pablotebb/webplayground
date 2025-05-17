@@ -151,3 +151,8 @@ Video 89
 3. python manage.py test messenger.tests.ThreadTestCase
 4. python manage.py test messenger.tests.ThreadTestCase.test_add_users_to_thread
 5. Nota importante\_ Cuando creamos pruebas, debemos tener en cuenta, que en la clase, siempre se inicializa todo en la función "setUp()", por lo que si hacemos código en una función, y vamos a poner el mismo código en otra, es necesario repetir el código, ya que se inicializa todo cuando hacemos el test, en la función que acabamos de decir, que hace el inicio ("setUp()")
+
+Video 90
+
+1. python manage.py test messenger.tests.ThreadTestCase.test_add_messege_from_user_not_in_thread
+2. Esto si que es TDD, en toda regla, ya que a fuerza de refactorizar hemos conseguido validar un test, sin alterar su estructura.
