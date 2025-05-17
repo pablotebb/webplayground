@@ -160,3 +160,17 @@ Video 90
 Video 91
 
 1. Al autor del video, no le gusta, poner 2 filter seguidos...
+
+Video 92
+
+1. python manage.py shell
+   > > > from django.contrib.auth.models import User
+   > > > from messenger.models import Thread, Message
+   > > > pablo = User.objects.get(username="pablo")
+   > > > pepito = User.objects.get(username="pepito8")
+   > > > thread = Thread.objects.find_or_create(pablo, pepito)
+   > > > thread.messages.add(Message.objects.create(user=pablo, content="Buenos días Pepito!"))
+   > > > thread.messages.add(Message.objects.create(user=pepito, content="Hola Pablo!"))
+   > > > thread.messages.add(Message.objects.create(user=pablo, content="Me voy"))
+   > > > thread.messages.add(Message.objects.create(user=pepito, content="Pues adiós!"))
+   > > > exit()
