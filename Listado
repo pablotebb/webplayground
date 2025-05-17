@@ -156,3 +156,7 @@ Video 90
 
 1. python manage.py test messenger.tests.ThreadTestCase.test_add_messege_from_user_not_in_thread
 2. Esto si que es TDD, en toda regla, ya que a fuerza de refactorizar hemos conseguido validar un test, sin alterar su estructura.
+
+Video 91
+
+1. Al autor del video, no le gusta, poner 2 filter seguidos...
