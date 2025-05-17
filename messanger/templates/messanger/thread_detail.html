@@ -60,15 +60,23 @@
             </div>
             <!-- Aquí crearemos el formulario -->
              <textarea class="form-control mb-2" id="content" rows="2" placeholder="Escribe tu mensaje aquí"></textarea>
-             <button id="send" class="btn btn-primary btn-sm btn-block" disabled>Petición asíncrona de prueba</button>
+             <button id="send" class="btn btn-primary btn-sm btn-block" disabled>Enviar mensaje</button>
              <script>
                 var send = document.getElementById("send");
                 send.addEventListener("click", function(){
                   var content = encodeURIComponent(document.getElementById("content").value);
                   if (content.length > 0) {
+                    document.getElementById("content").value = '';
+                    send.disabled = true;
                     const url = "{% url 'messanger:add' thread.pk %}" + "?content="+content;
                     fetch(url, {'credentials':'include'}).then(response => response.json()).then(function(data){
-                      alert(data.created)
+                      if(data.created) {
+                        var message = document.createElement('div')
+                        message.classList.add('mine', 'mb-3');
+                        message.innerHTML = '<small><i>Hace unos segundos</i></small><br>'+decodeURIComponent(content);
+                        document.getElementById('thread').appendChild(message);
+                        ScrollBotomInThread();
+                      }
                     })
                   }
                 })
@@ -82,6 +90,14 @@
                     send.disabled = false;
                   }
                 })
+
+                // Forzar el Scroll abajo del todo
+                function ScrollBotomInThread() {
+                  var thread = document.getElementById("thread")
+                  thread.scrollTop = thread.scrollHeight;
+                }
+
+                ScrollBotomInThread();
              </script>
           </div>
         </div>
